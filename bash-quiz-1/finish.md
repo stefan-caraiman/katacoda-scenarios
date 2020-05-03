@@ -1,0 +1,1 @@
+Ai ajuns la finalul quiz-ului de bash partea 1, bravo!
