@@ -1,7 +1,7 @@
 {
     "noindex": true,
-    "title": "Interactive Quiz",
-    "description": "Verify understanding and key points by using an interactive quiz",
+    "title": "Bash Interactive Quiz - Part 1",
+    "description": "Quiz interactiv despre comenzi si intrebari de bash.",
     "details": {
         "steps": [
             {
