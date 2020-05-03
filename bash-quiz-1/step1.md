@@ -1,5 +1,11 @@
 Gasestei mai jos un quiz despre comenzi din bash.
 
+
+## Cum sa te verifici
+
+Verificarea intrebarilor o poti face la finalul paginii/scroll down.
+Cand dai click pe **Continue**, raspunsurile corecte vor aparea cu o sageata verde! Daca vreo intrebare nu a fost corect raspunsa, vei primi un mesaj ca sa incerci din nou, have fun!
+
 ## Quiz Bash - Part 1
 
 >>Q1: Ce comanda poti rula ca sa iti arate folderul in care te afli?(current working directory)<<
@@ -34,7 +40,3 @@ Gasestei mai jos un quiz despre comenzi din bash.
 [*] date
 [ ] get-ram
 [ ] poweron
-
-## Cum sa te verifici
-
-Cand dai click pe **Check Answers**, raspunsurile corecte vor aparea cu o sageata verde! Daca vreo intrebare nu a fost corect raspunsa, vei primi un mesaj ca sa incerci din nou, ca sa poti completa quiz-ul si sa treci la urmatoarele intrebari.
