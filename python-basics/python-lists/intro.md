@@ -1,0 +1,1 @@
+Acest exercitiu va trece prin tipul de date "list" si prin operatiunile si metodele care pot fi efectuate cu listele.

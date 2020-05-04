@@ -1,0 +1,34 @@
+{
+  "title": "Python Lists",
+  "description": "Introduction to Python lists",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+        "title": "Creating lists",
+        "text": "lists.md"
+      },
+      {
+        "title": "Indexing and slicing",
+        "text": "indexing.md"
+      },
+      {
+        "title": "List methods",
+        "text": "methods.md"
+      }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart python using `python` command.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "tensorflow"
+  }
+}

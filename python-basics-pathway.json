@@ -1,0 +1,10 @@
+{
+  "title": "Fundamente ale limbajului Python",
+  "description": "Acest tutorial interactiv prezinta concepte de baza din Python",
+  "courses": [
+    {
+      "course_id": "python-lists",
+      "title": "Python Lists",
+      "description": "Introduction to Python Lists"
+    }]
+}
