@@ -1,7 +1,3 @@
-Pentru a putea crea liste, vom avea nevoie sa deschidem Shell-ul de Python, ori prin a scrie `python` in terminal-ul alaturat, ori putem da click pe bucata de cod de mai jos:
-
-`python`{{execute}}
-
 Variabile de tip lista se creaza cu paranteze patrate
 
 `lista = [0, 1, 2]`{{execute}}

@@ -13,3 +13,20 @@ lista
 `
 
 Prin exemplul de mai sus putem observa cum, valorile din lista sunt in ordine inversa decat cea pe care am scris-o cand am creat variabila.
+
+
+O alta metoda utila este metoda `.append()`, care ne permite sa adaugam elemente aditionale la o lista:
+
+`a = ["hi", "hello"]
+print(a)
+a.append("bye")
+print(a)`{{execute}}
+
+De asemenea putem adauga elemente si la anumite pozitii prin a folosi metoda `.insert()`:
+
+`a = ["apple", "banana"]
+print(a)
+a.insert(0, "kiwi")
+print(a)`{{execute}}
+
+Metoda `.insert()` primeste ca si argumente, index-ul/pozitia unde vrem valoarea si valoarea pe care vrem sa o adaugam.
