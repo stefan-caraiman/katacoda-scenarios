@@ -6,5 +6,11 @@
       "course_id": "python-lists",
       "title": "Python Lists",
       "description": "Introduction to Python Lists"
-    }]
+    },
+    {
+      "course_id": "python-functions",
+      "title": "Python - Writting Functions",
+      "description": "Introduction to writting Python Function"
+    }
+  ]
 }

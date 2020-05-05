@@ -1,0 +1,31 @@
+{
+  "title": "Python - Writting Functions",
+  "description": "Introduction to writting Python Function",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Creating functions",
+        "text": "functions.md"
+      },
+      {
+        "title": "Returning values with functions",
+        "text": "return.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart python using `python3` command.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "tensorflow"
+  }
+}
