@@ -27,13 +27,14 @@ Un exemplul de functie simpla ar fi:
 	b = 5
 	total = a + b
 	print("a + b =", total)
+
 `{{execute}}
 
 Functia se termina de scrisa in momentul in care nu mai scriem `TAB/Spatii` si dam `enter`.
 
 Si ca sa putem rula/executa functia definita de noi, o facem la fel ca si cu orice alta functie:
 
-`say_hello()`
+`say_hello()`{{execute}}
 
 
 Un exemplu de functie care primeste un argument ar fi:
