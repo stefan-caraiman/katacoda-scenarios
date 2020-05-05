@@ -17,17 +17,16 @@ Functiile se definesc astfel:
     <cod>
 `
 
-Nu uita sa pui cele `:` la finalul liniei care incepe cu `def`, si sa punem `TAB/Spatii` pe fiecare linie care este cuprinsa in codul de functie.
 
 Un exemplul de functie simpla ar fi:
 
-`def say_hello():
+`
+def say_hello():
 	print("Hello there!")
 	a = 10
 	b = 5
 	total = a + b
 	print("a + b =", total)
-
 `{{execute}}
 
 Functia se termina de scrisa in momentul in care nu mai scriem `TAB/Spatii` si dam `enter`.

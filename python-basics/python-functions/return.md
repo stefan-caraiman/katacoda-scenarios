@@ -11,7 +11,8 @@ In exemplul de mai sus, functia `len` ne calculeaza cate litere sunt in valoarea
 
 Exemplu de functie care `return`-eaza o valoare:
 
-`def inmultire(numar):
+`
+def inmultire(numar):
 	return numar * 2
 `{{execute}}
 
@@ -26,8 +27,9 @@ print(total)`{{execute}}
 
 Alte exemple de functii care ne `return`-eaza un output:
 
-`def aduna_numere(numar1, numar2):
+`
+def aduna_numere(numar1, numar2):
 	return numar1 + numar2
+`{{execute}}
 
-
-aduna_numere(150, 25)`{{execute}}
+`aduna_numere(150, 25)`{{execute}}
