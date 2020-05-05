@@ -1,4 +1,6 @@
-Variabile de tip lista se creaza cu paranteze patrate
+Pentru a rula comenzi in Python putem porni terminalul interactiv cu comanda: `python3`{{execute}}
+
+Variabile de tip lista se creaza cu paranteze patrate:
 
 `lista = [0, 1, 2]`{{execute}}
 
@@ -10,7 +12,7 @@ Putem sa ne folosim de functia `len` ca sa numaram cate elemente/valori sunt in 
 
 `len(lista)`{{execute}}
 
-Putem aduna/uni 2 liste prin a ne folosi de `+`/operatiune de adunare.
+Putem aduna/uni 2 liste prin a ne folosi de `+`/operatiunea de adunare:
 
 `l1 = [1, 2, 3]
 l2 = [4, 5]

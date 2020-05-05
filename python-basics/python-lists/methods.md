@@ -7,10 +7,10 @@ Acestea se scriu cu `.` urmate de numele metodei.
 De exemplu, listele au o metoda numita `reverse`, care ne va inversa ordinea elementelor din lista.
 
 `lista = [0, 1, 2, 3]
-lista
+print(lista)
 lista.reverse() # Ne folosim de metoda reverse
-lista
-`
+print(lista)
+`{{execute}}
 
 Prin exemplul de mai sus putem observa cum, valorile din lista sunt in ordine inversa decat cea pe care am scris-o cand am creat variabila.
 
