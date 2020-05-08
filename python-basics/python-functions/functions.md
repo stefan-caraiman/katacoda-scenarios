@@ -19,10 +19,14 @@ Functiile se definesc astfel:
 
 Un exemplul de functie simpla ar fi:
 
-`
+```
 def say_hello():
 	print("Hello there!")
-`{{execute}}
+
+
+say_hello()
+```
+{{execute}}
 
 Functia se termina de scrisa in momentul in care nu mai scriem `TAB/Spatii` si dam `enter`.
 
