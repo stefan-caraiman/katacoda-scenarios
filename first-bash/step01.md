@@ -21,3 +21,7 @@ De exemplu daca vrem sa setam permisii de executabil pentru toate fisierele care
 Daca rulam din nou `ls *.sh`{{execute}} observam ca scripturile sunt colorate cu verde, insemnand ca sunt executabile.
 
 Sau daca ne dorim sa stergem toate fisierele care incep cu `file`, putem rula: `rm -vf file*`{{execute}}
+
+# Concluzie
+
+`*` este folosit pentru a face matching/find pe orice fisier care se incadreaza formatului pe care il dam. Este deseori folosite ca sa rulam aceasi comanda pe un tip de fisier sau fisiere cu un anumit nume.
