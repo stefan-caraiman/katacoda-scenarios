@@ -1,1 +1,1 @@
-Aceste este un tutorial interactiv pentru Bash, apase pe `START SCENARIO` ca sa incepi. :)
+Aceste este un tutorial interactiv pentru Bash, apasa pe `START SCENARIO` ca sa incepi. :)

@@ -1,1 +1,1 @@
-Felicitari, ai terminat exercitiul!
+Felicitari, ai terminat exercitiul cu Wildcard/Asterisk!

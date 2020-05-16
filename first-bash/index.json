@@ -1,18 +1,13 @@
 {
-  "title": "Introducere Bash",
-  "description": "Comenzi de baza din bash",
+  "title": "Asterisk (*) in Bash",
+  "description": "Cum se foloseste asterisk/* in Bash",
   "difficulty": "beginner",
   "time": "10 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - pwd",
+      "title": "Asterisk",
       "text": "step01.md",
       "answer": "step01-answer.md"
-    },
-    {
-      "title": "Step 2 - ls",
-      "text": "step02.md",
-      "answer": "step02-answer.md"
     }],
     "intro": {
       "text": "intro.md",

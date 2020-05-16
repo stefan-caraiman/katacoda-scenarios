@@ -1,14 +1,18 @@
-Comanda `pwd` iti zice locatia curenta in care de alfi.
-`pwd` este un acronim si vine de la `Print Working Directory`, ca sa ne putem da seama in orice moment unde ne aflam.
+In Bash asterisk-ul/*/steluta ne ajuta la gasirea de fisiere care se incadreaza intr-un format.
 
-## Task
+Aceasta proprietate se mai numeste si `wildcard`.
 
-Scrie `pwd` in terminalul din dreapta ca sa vezi in ce `directory` te afli.
+Cum se foloseste aceasta functionalitate:
 
-Poti sa apesi si comanda de mai jos ca sa se scrie automat in terminal:
+Daca rulam: `ls file*`{{execute}} vom observa ca `ls` ne va arata doar fisierele care incep cu `file`, `*` de dupa `file` va face astfel incat sa gaseasca orice alt tip de fisier care incepe cu `file`.
 
-`pwd`{{execute}}
+Sau comanda: `ls *.sh`{{execute}} ne va lista toate fisierele care se termina cu `.sh`. `*` poate fi folosit si pentru gasirea fisierelor cu un anumit prefix cat si cu un anumit sufix.
 
-Pentru mai multe detalii despre comanda `pwd`, poti rula `man`, comanda care deschide `manualul` unei comenzi(apasa `q` ca sa poti iesi):
+De asemenea `ls *.txt`{{execute}} ne va lista orice fisier care se termine cu `.txt`
 
-`man pwd`{{execute}}
+Ne putem folosi de functionlitatea `*` si in alte comenzi precum `chmod`.
+
+De exemplu daca vrem sa setam permisii de executabil pentru toate fisiere `.sh` putem rula:
+
+`chmod +x *.sh`{{execute}} astfel prin a folosi `*`, vom filtra dupa orice fisier care se termina cu `*.sh` si dupa ii zicem lui `chmod` sa il faca executabil.
+
