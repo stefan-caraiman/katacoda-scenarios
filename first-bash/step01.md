@@ -19,3 +19,5 @@ De exemplu daca vrem sa setam permisii de executabil pentru toate fisierele care
 `chmod +x *.sh`{{execute}} astfel prin a folosi `*`, vom filtra dupa orice fisier care se termina cu `*.sh` si dupa ii zicem lui `chmod` sa il faca executabil.
 
 Daca rulam din nou `ls *.sh`{{execute}} observam ca scripturile sunt colorate cu verde, insemnand ca sunt executabile.
+
+Sau daca ne dorim sa stergem toate fisierele care incep cu `file`, putem rula: `rm -vf file*`{{execute}}
