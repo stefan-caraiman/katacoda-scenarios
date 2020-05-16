@@ -4,7 +4,9 @@ Aceasta proprietate se mai numeste si `wildcard`.
 
 Cum se foloseste aceasta functionalitate:
 
-Daca rulam: `ls file*`{{execute}} vom observa ca `ls` ne va arata doar fisierele care incep cu `file`, `*` de dupa `file` va face astfel incat sa gaseasca orice alt tip de fisier care incepe cu `file`.
+Daca rulam: `ls file*`{{execute}} vom observa ca `ls` ne va arata doar fisierele care incep cu `file`.
+
+`*` de dupa `file` va face sa gaseasca orice fisier care incepe cu `file`.
 
 Sau comanda: `ls *.sh`{{execute}} ne va lista toate fisierele care se termina cu `.sh`. `*` poate fi folosit si pentru gasirea fisierelor cu un anumit prefix cat si cu un anumit sufix.
 
