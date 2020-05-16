@@ -14,7 +14,7 @@ De asemenea `ls *.txt`{{execute}} ne va lista orice fisier care se termine cu `.
 
 Ne putem folosi de functionlitatea `*` si in alte comenzi precum `chmod`.
 
-De exemplu daca vrem sa setam permisii de executabil pentru toate fisiere `.sh` putem rula:
+De exemplu daca vrem sa setam permisii de executabil pentru toate fisierele care se termina cu `.sh` putem rula:
 
 `chmod +x *.sh`{{execute}} astfel prin a folosi `*`, vom filtra dupa orice fisier care se termina cu `*.sh` si dupa ii zicem lui `chmod` sa il faca executabil.
 
