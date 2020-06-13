@@ -97,7 +97,9 @@ Some common ports in the world of web applications are:
 
 ## Checking if a local port is properly running on the system
 
-Most of the times when working with an application on a Linux system, you will need to check that a certain port for an application is still running. This is the first thing that you should check in case someone complains that they are getting a `connection refused` or `I can't access the website`.
+Most of the times when working with an application on a Linux system, you will need to check that a certain port for an application is still running.
+
+This is the first thing that you should check in case someone complains that they are getting a `connection refused` or `I can't access the website`.
 
 In order to check open ports on the system, we can either use the `netstat` command or the newer version `ss`.
 
