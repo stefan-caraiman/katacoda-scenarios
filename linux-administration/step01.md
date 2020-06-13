@@ -95,9 +95,7 @@ Some common ports in the world of web applications are:
   - `5432` used by PostgreSQL
 
 
-## Checking if a remote server is up
-
-## Checking if a local port is running on the system
+## Checking if a local port is properly running on the system
 
 Most of the times when working with an application on a Linux system, you will need to check that a certain port for an application is still running. This is the first thing that you should check in case someone complains that they are getting a `connection refused` or `I can't access the website`.
 
@@ -123,6 +121,7 @@ If the expected port is not running, you can start from there to investigate fur
 
 Checking if the process is running, checking the logs of the application etc.
 
+`netstat` is sometimes prefered in the favour of `netcat` because it can display more detailed local information about a port. Who owns it, when it started etc.
 
 ## Checking the response from a web application
 
@@ -134,6 +133,12 @@ For example running: `curl -vk http://example.com/`{{execute}}
 
 Will give us the `index.html` from the `example.com` webpage and additional headers. The `-vk` argument means that we want to recieve **verbose**(`-v`) information and the `-k` means that we want to ignore SSL certificate errors, in case the domain isn't running on HTTPS for example.
 
+
+## Other common networking tasks
+
+1. Checking our system public IP: `curl ifconfig.me`{{execute}} or `dig +short myip.opendns.com`{{execute}}
+2. Checking local private network information: `ifconfig`{{execute}} or on newer systems: `ip a s`{{execute}}
+3. Enable/disable a private network: `ifdown lo`{{execute}} to disable and `ifup lo`{{execute}} to enable the **lo**(localhost) network.
 
 ## Conclusion
 
