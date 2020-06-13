@@ -5,11 +5,16 @@
   "time": "50 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Chapter 1 - Networking",
       "text": "step01.md",
-      "answer": "step01-answer.md",
       "courseData": "setup.sh"
-    }],
+    },
+    {
+      "title": "Chapter 2 - Procceses",
+      "text": "step02.md",
+      "courseData": "setup.sh"
+    }
+  ],
     "intro": {
       "text": "intro.md"
     },
