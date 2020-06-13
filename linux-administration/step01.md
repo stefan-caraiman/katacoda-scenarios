@@ -2,7 +2,15 @@
 
 In this first chapter, we will be looking into how we can debug common network issues.
 
-## Checking if a port is running on the system
+## Checking if a DNS record is registered/works
+
+## Checking IP information
+
+## Checking if a remote port is working
+
+## Checking if a remote server is up
+
+## Checking if a local port is running on the system
 
 Most of the times when working with a applications on a Linux system, you will need to check that a certain port for an application is still running. This is the first thing that you should check in case someone complains that they are getting a `connection refused` or `I can't access the website`.
 
@@ -22,5 +30,6 @@ Each letter after the dash sign/ `-` is an argument for the netstat command, the
   - `-e` : Display extra information
   - `-t` : Show TCP ports
 
-For example if we want to check if port `22` is opened we can use `grep` on the output of the `netstat`, like so: `nestat -lepunta | grep 22`{{execute}}
+For example if we want to check if port `22` is opened we can use `grep` on the output of the `netstat`, like so: `netstat -lepunta | grep 22`{{execute}}
 
+## Checking the response from a webservice
