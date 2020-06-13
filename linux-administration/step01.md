@@ -138,7 +138,7 @@ Will give us the `index.html` from the `example.com` webpage and additional head
 
 ## Other common networking tasks
 
-1. Checking our system public IP: `curl ifconfig.me`{{execute}} or `dig +short myip.opendns.com`{{execute}}
+1. Checking our system public IP: `curl ifconfig.me`{{execute}} or `curl icanhazip.com`{{execute}} or `dig +short myip.opendns.com @resolver1.opendns.com`{{execute}}
 2. Checking local private network information: `ifconfig`{{execute}} or on newer systems: `ip a s`{{execute}}
 3. Enable/disable a private network: `ifdown lo`{{execute}} to disable and `ifup lo`{{execute}} to enable the **lo**(localhost) network.
 
