@@ -2,6 +2,7 @@
 
 In this first chapter, we will be looking into how we can debug common network issues.
 
+
 ## Debugging DNS issues
 
 One of the most common problems when it comes down to a server or a client finding the IP address/correct IP address of another remote server/web application. Meaning, is the DNS working correctly?
@@ -12,23 +13,28 @@ You can think of it like a big phonebook of the internet, which knows that each 
 
 Most common commands for checking DNS information are: `dig`, `nslookup`, `whois`, `host`
 
+
 **Using `dig`**
 
 `dig google.com`{{execute}} will give us the DNS information about the `google.com` domain.
+
 
 **Using `nslookup`**
 
 `nslookup google.com`{{execute}} will also give us DNS/IP information
 
+
 **Using `whois`**
 
 `whois google.com`{{execute}} will give us details about who owns the domain, when it was bought etc.
+
 
 **Using `host`**
 
 The host command is also similar to the previous ones, it can give us all the DNS records(IPs etc.) in a more readable format.
 
 `host netflix.com`{{execute}}
+
 
 **Further DNS details:**
 
@@ -57,7 +63,37 @@ This happens because in Linux, whenever a program/user tries to access a IP, it 
 Thus you should always check the `/etc/hosts` file on the system as well, when debugging an incorrect IP.
 
 
-## Checking if a remote port is working
+## Checking if a port is working
+
+What is a port?
+
+A port is a way through which an application can expose and communicate with other clients/servers in a network. You can think of it like the **entry door** for an application which is running on our system.
+
+Ports are used as a way to expose multiple programs on the same system. The same way a street can have multiple houses residing on it, and each house hosts a different family, a port is a different house on the **network street** of the system.
+
+One of the most popular tools to use for checking the status of a port, locally or remote, is the `nc`/`netcat` command.
+
+You can use `nc` like so: `nc -v -w1 netflix.com 443`{{execute}}
+
+  - `-v` : tells `nc` to print extra information/`verbose`, such as whether a connection worked or not
+  - `-w1` : tells `nc` to wait for one second to connect, if the connection didn't succeed within `1 second` it will stop
+
+We can replace the `netflix.com` address with our localhost IP as well: `nc -v -w1 127.0.0.1 80`{{execute}}
+
+If we ever get a `connection refused` it means that the Port is not opened.
+
+If we get a `timeout` it means that the port might be opened, but the application didn't manage to respond to us in a timely manner.
+
+In either of these 2 cases, we should further investigate if the `IP` is the correct one, if the process is running or check the logs of the application which is misbehaving.
+
+Some common ports in the world of web applications are:
+
+  - `22` used for SSH
+  - `80` used for HTTP requests
+  - `443` used for HTTPS requests
+  - `8080` sometimes used by Apache web server
+  - `5432` used by PostgreSQL
+
 
 ## Checking if a remote server is up
 
@@ -86,6 +122,7 @@ For example if we want to check if port `22` is opened we can use `grep` on the 
 If the expected port is not running, you can start from there to investigate further.
 
 Checking if the process is running, checking the logs of the application etc.
+
 
 ## Checking the response from a web application
 
