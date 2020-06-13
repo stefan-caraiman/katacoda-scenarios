@@ -1,0 +1,1 @@
+[ $PWD = "/home/scrapbook" ] && echo "done"
