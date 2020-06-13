@@ -48,6 +48,14 @@ If we try to access `google.com` by `ping`-ing it, we will notice that the IP sh
 
 `ping -c2 google.com`{{execute}}
 
+This happens because in Linux, whenever a program/user tries to access a IP, it will do the following steps:
+
+1. Check `/etc/hosts` file, if the `DNS` name is set in there, use that IP
+2. If the `DNS` name is not set in `/etc/hosts` file, look in the local `DNS cache`, meaning already saved `DNS` records, **only if** configured by the system administrator.
+3. If the `DNS` is not present in the cache, go to `/etc/resolv.conf` and ask the `nameserver` IP, about the adress we are trying to reach.
+
+Thus you should always check the `/etc/hosts` file on the system as well, when debugging an incorrect IP.
+
 
 ## Checking if a remote port is working
 
