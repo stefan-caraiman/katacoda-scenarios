@@ -7,19 +7,17 @@
     "steps": [{
       "title": "",
       "text": "step01.md",
-      "answer": "step01-answer.md"
+      "answer": "step01-answer.md",
+      "courseData": "setup.sh"
     }],
     "intro": {
-      "text": "intro.md",
-      "courseData": "setup.sh"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
     }
   },
-  "files": [
-    "file1"
-  ],
+  "files": [],
   "environment": {
     "uilayout": "terminal",
     "uimessage1": "\u001b[32mThis is an interactive Bash Terminal in Ubuntu.\u001b[m\r\n"
