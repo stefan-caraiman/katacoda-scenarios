@@ -65,5 +65,18 @@ Mainly anything which takes up storage, our first instinct should be that the di
 
 Usually if we notice that the disk usage is high, the next step is to look up for the folders which take up the most space on the system.
 
-In order to do that, we can use the `du` command like so: `du -a / | sort -n -r | head -n 20`{{execute}}
+In order to do that, we can use the `du` command.
 
+For example if we want to check what are the biggest 5 folders in the `/var` folder, we can run: `sudo du -Sh /var/ | sort -rh | head -5`{{execute}}
+
+And to check the 5 biggest files in the `/var` folders, we can run the `find` command like so: `find /var -type f -exec du -Sh {} + | sort -rh | head -n 5`{{execute}}
+
+Usually after checking that the disk usage is full, we would start checking folders and files which take up space and identify the issue. Most of the times it can be a big file, like a log file growing big because there are many requests, or some backup files not being deleted properly.e
+
+## Conclusion
+
+We now have the tools necessary to identify issues related to the usage of resources on our system.
+
+Most of the times we will simply start checking all the resources one by one when we encounter issues with our applications.
+
+From there on out, you can present the findings on to the development teams and decide on next steps.
