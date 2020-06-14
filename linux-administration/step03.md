@@ -63,3 +63,7 @@ This is most commonly used when someone complains that for example a file upload
 
 Mainly anything which takes up storage, our first instinct should be that the disk usage is close to full, which can be an issue.
 
+Usually if we notice that the disk usage is high, the next step is to look up for the folders which take up the most space on the system.
+
+In order to do that, we can use the `du` command like so: `du -a / | sort -n -r | head -n 20`{{execute}}
+
