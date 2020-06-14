@@ -56,3 +56,10 @@ When it comes down to checking disk usage on the system, `df` and `du` are the m
 
 `df` is used to check disk usage per filesystem/disk.
 `du` is used to check disk usage per folders or files.
+
+For example if we want to check the disk usage on the whole sytem we can run: `df -h`{{execute}}
+
+This is most commonly used when someone complains that for example a file upload does not work, data is not getting generated etc.
+
+Mainly anything which takes up storage, our first instinct should be that the disk usage is close to full, which can be an issue.
+
