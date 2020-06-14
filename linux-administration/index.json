@@ -13,6 +13,11 @@
       "title": "Chapter 2 - Procceses",
       "text": "step02.md",
       "courseData": "setup.sh"
+    },
+    {
+      "title": "Chapter 3 - Resources usage on the system",
+      "text": "step03.md",
+      "courseData": "setup.sh"
     }
   ],
     "intro": {

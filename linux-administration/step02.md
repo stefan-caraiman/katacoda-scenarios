@@ -57,7 +57,7 @@ Most common applications on systems get registered as **services**, in order to 
 
 We can get a list of all the services on the system by running: `systemctl --type=service`{{execute}}
 
-If we want to check the status of the `ssh` service for example, we can run: `systemctl status ssh`
+If we want to check the status of the `ssh` service for example, we can run: `systemctl status ssh`{{execute}}
 
 This will tell us whether or not the program is currently running, when it started and how it started, and in case it failed it will give us some output logs.
 
