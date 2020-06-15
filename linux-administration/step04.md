@@ -15,4 +15,25 @@ Some common commands when working with files are:
   - `mkdir` used to create empty directories, example: `mkdir somedirectory`{{execute}}
   - `cd` used to go/change directory to another one, example: `cd somedirectory`{{execute}} or if we want to go back to the previous folder we can run: `cd ..`{{execute}}
   - `rm` used to remove files or directories, example of deleting a file: `rm somefile`{{execute}} and deleting a directory requires you to run `rm` with the `-rf` argument like so: `rm -rf somedirectory`{{execute}}
+  - `pwd` to see in what folder we are currently in: `pwd`{{execute}}
   - `vim` or `nano` used to edit files, in `vim` you press ESC and then `:wq` to exit a file
+  - `find` used to find files with certain name or extension, for example if we want to find all the files that have the `.log` termination in the `/var/log` folder we can run: `find /var/log -iname "*.log"`{{execute}}
+
+Most of the times when working with a Linux distribution we will create, remove, edit, read and find files. The commands above help us achieve most of these actions.
+
+
+## Working with packages
+
+On Debian/Ubuntu the package manager is `apt`. The `package manager` is the tool which helps us install, uninstall, update and upgrade programs/packages and the overall things which we have on our system.
+
+Most common commands when working with `apt` are:
+
+  - `sudo apt update`{{execute}} used to update packages
+  - `sudo apt upgrade`{{execute}} used to upgrade the version of packages
+  - `sudo apt list --installed`{{execute}} to list all of the installed packages/programs on the system. We can combine it with `grep` to search for certain packages like so: `apt list --installed | grep nginx`{{execute}}
+  - `sudo apt install package-name` used to install packages/programs
+  - `sudo apt remove package-name` used to remove a program, it will *NOT* delete configuration files
+  - `sudo apt purge package-name` used to remove a program *and* the configuration files
+  - `sudo apt autoremove`{{execute}} used to delete packages which are not being used anymore/garbage
+
+
