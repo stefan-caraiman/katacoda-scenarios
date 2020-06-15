@@ -18,6 +18,10 @@
       "title": "Chapter 3 - Resources usage on the system",
       "text": "step03.md",
       "courseData": "setup.sh"
+    },
+    {
+      "title": "Chapter 4 - Files and packages",
+      "text": "step04.md"  
     }
   ],
     "intro": {
