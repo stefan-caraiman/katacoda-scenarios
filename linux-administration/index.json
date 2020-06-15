@@ -21,7 +21,8 @@
     },
     {
       "title": "Chapter 4 - Files and packages",
-      "text": "step04.md"  
+      "text": "step04.md",
+      "courseData": "setup-file.sh"
     }
   ],
     "intro": {
