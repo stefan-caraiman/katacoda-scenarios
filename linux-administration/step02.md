@@ -40,7 +40,7 @@ Usually if you want to only see details about a single process/program, you can 
 
 For example in order to check if **nginx** is running and other details about it, we can just run: `ps auxw | grep nginx`{{execute}}
 
-In the first column of the output, we can see the user that started that process/command, in our case for **nginx**, its user **root**.
+In the first column of the output, we can see the user that started that process/command, in our case for the **nginx** program, the user is **root**.
 
 The second column contains the PID number, that is an unique **P**rocess **ID**.
 
