@@ -4,7 +4,8 @@
 
 From a files perspective we will most of the times open and modify files on the system.
 
-Files such as configuration, scripts or log files.
+These files can be configuration, scripts or log files.
+
 
 Some common commands when working with files are:
 
