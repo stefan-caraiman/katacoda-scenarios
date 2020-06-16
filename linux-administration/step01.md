@@ -63,6 +63,13 @@ This happens because in Linux, whenever a program/user tries to access a IP, it 
 Thus you should always check the `/etc/hosts` file on the system as well, when debugging an incorrect IP.
 
 
+**Beware:** This order is defined by the `/etc/nsswitch.conf` file.
+
+If we look at this file we will notice: `cat /etc/nsswitch.conf`{{execute}}
+
+That on the line with **hosts: ** the order defined is **files dns**, this tells the system to always look in the **files** first(`/etc/hosts`) and then look in **dns**, meaning that it will look at the nameserver from `/etc/resolv.conf`.
+
+
 ## Checking if a port is working
 
 What is a port?
