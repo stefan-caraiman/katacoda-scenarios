@@ -19,6 +19,8 @@ Some common commands when working with files are:
   - `pwd` to see in what folder we are currently in: `pwd`{{execute}}
   - `vim` or `nano` used to edit files, in `vim` you press ESC and then `:wq` to exit a file
   - `find` used to find files with certain name or extension, for example if we want to find all the files that have the `.log` termination in the `/var/log` folder we can run: `find /var/log -iname "*.log"`{{execute}}
+  - `which` and `whereis` used to find the **full path** on the system for where a program/command is, for example to find where the `cat` command is we can run: `which cat`{{execute}} or `whereis cat`{{execute}} . `whereis` will also tells us where documentation pages are.
+  - `man` and `whatis` are used to find out information about commands, unlike `man`, `whatis` gives us only a short description like so: `whatis cat`{{execute}}
 
 Most of the times when working with a Linux distribution we will create, remove, edit, read and find files. The commands above help us achieve most of these actions.
 
