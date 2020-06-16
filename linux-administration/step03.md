@@ -4,6 +4,7 @@ In this chapter we will be looking at most common issues when it comes down to t
 
 Things such as High CPU load, High RAM usage, low Disk space left on the system.
 
+
 ## The **htop** command
 
 **htop** and **top** are some of the most common commands when it comes to looking into how many resources the proccesses on the system are using.
@@ -19,6 +20,7 @@ You can press `F10` or `q` after you noticed that a program is using too much me
 Any kind of high activity might either be related to a high usage of the application, in which case it should be disscussed with the team to increase resources and scale up the application, add more servers.
 
 Or in case of a new release, there might be some kind of leakage of resources and the development teams should be notified that the applications are using way too many resources.
+
 
 ## The **uptime** or **w** command
 
@@ -36,6 +38,7 @@ For example if the load average is **100** it means that there are currently **1
 
 In either cases, if the **load average** is too high, we should either scale up the resources of the server or discuss with the development teams if that is expected.
 
+
 ## The **free** command
 
 `free` will give us information about the memory usage on the system.
@@ -44,6 +47,7 @@ Running `free -h`{{execute}} will give us RAM usage in a human readable format/G
 
 It is usually useful to run as a first command when checking if there is a low memory usage on the system.
 
+
 ## Using the **ps** command
 
 We can also use the **ps** command to easily get the programs which use the most CPU and memory.
@@ -51,6 +55,7 @@ We can also use the **ps** command to easily get the programs which use the most
 We can run `ps` like so: `ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem`{{execute}}
 
 This will give us all the proccesses on the system, and only show the Memory and CPU usage used by the programs.
+
 
 ## Using the **df** and **du** commands
 
@@ -73,7 +78,8 @@ For example if we want to check what are the biggest 5 folders in the `/var` fol
 
 And to check the 5 biggest files in the `/var` folders, we can run the `find` command like so: `find /var -type f -exec du -Sh {} + | sort -rh | head -n 5`{{execute}}
 
-Usually after checking that the disk usage is full, we would start checking folders and files which take up space and identify the issue. Most of the times it can be a big file, like a log file growing big because there are many requests, or some backup files not being deleted properly.e
+Usually after checking that the disk usage is full, we would start checking folders and files which take up space and identify the issue. Most of the times it can be a big file, like a log file growing big because there are many requests, or some backup files not being deleted properly.
+
 
 ## Conclusion
 
@@ -82,3 +88,4 @@ We now have the tools necessary to identify issues related to the usage of resou
 Most of the times we will simply start checking all the resources one by one when we encounter issues with our applications.
 
 From there on out, you can present the findings on to the development teams and decide on next steps.
+
