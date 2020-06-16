@@ -44,7 +44,7 @@ So if we do `echo "Some other text" > file.txt`{{execute}} and then `cat` `cat f
 
 For example `echo "another line" >> file.txt`{{execute}} and `cat file.txt`{{execute}} -> we notice the file also contains our new line.
 
-
+Adding text to the end of a file is also called **appending**. So **>>** can be used to append **text** to files.
 
 ## Finding information in files
 
