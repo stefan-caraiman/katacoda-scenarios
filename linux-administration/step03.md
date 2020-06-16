@@ -32,6 +32,8 @@ If the numbers shown in the **load average** are higher than the number shown by
 
 If the number of **load average** is constant, users will experience slowness because the applications don't have enough CPU resources to serve web pages to the users.
 
+For example if the load average is **100** it means that there are currently **100** proccesses waiting after the CPU to be able to execute them, generating slow time for the processes which are waiting for more CPU.
+
 In either cases, if the **load average** is too high, we should either scale up the resources of the server or discuss with the development teams if that is expected.
 
 ## The **free** command
