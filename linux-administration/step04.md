@@ -45,6 +45,38 @@ So if we do `echo "Some other text" > file.txt`{{execute}} and then `cat` `cat f
 For example `echo "another line" >> file.txt`{{execute}} and `cat file.txt`{{execute}} -> we notice the file also contains our new line.
 
 
+
+## Finding information in files
+
+It's very common for us to try and find certain data in files. For example we search for a word in a file, want to check how many times it appears and so on.
+
+Most common commands when working with finding/searching for text in files are:
+
+  - `grep` used to search for text in a file/multiple files
+  - `uniq` used to remove duplicate text/lines in a file
+  - `sort` used to sort lines in a file by alphabetical order
+  - `wc` used to count lines/words in a file
+
+Some common(more advanced examples):
+
+**How to find how many times the word "BLOCKED" appears in a file:**
+
+`cat example.txt | grep BLOCKED | wc -l`{{execute}}
+
+The **|** is called a **pipe** in Linux scripting. It is used to **chain**/run commands one after another so that we can process data inside.
+
+This command will output the text inside `example.txt` with `cat`. Then we use **|** to tell it to `grep BLOCKED` so that we can find only the lines in the file which contain the word **BLOCKED** and then we **pipe** again to count how many times the word appears by using the command `wc -l`.
+
+**How to find all the unique lines of text in a file and sort them:**
+
+`cat example.txt | uniq | sort`
+
+We `cat` to get the text inside the file and the use **pipe** twice to first get all the unique lines of text with the **uniq** command and then we run **sort** to get the lines in the alphabetical order.
+
+
+Most of the times we will use these commands to find blocked,allowed IPs, malicious requests, find out if an IP is inside a file etc.
+
+
 ## Working with packages
 
 On Debian/Ubuntu the package manager is `apt`. The `package manager` is the tool which helps us install, uninstall, update and upgrade programs/packages and the overall things which we have on our system.
