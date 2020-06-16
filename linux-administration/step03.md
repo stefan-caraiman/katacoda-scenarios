@@ -6,7 +6,7 @@ Things such as High CPU load, High RAM usage, low Disk space left on the system.
 
 ## The **htop** command
 
-**htop** and **top** are one of the most common commands when it comes to looking into how many resources the proccesses on the system are using.
+**htop** and **top** are some of the most common commands when it comes to looking into how many resources the proccesses on the system are using.
 
 `htop`{{execute}} will open a interactive program which gives us information about running programs, CPU and Memory usage, the PID, the time since it started etc.
 
