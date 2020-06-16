@@ -27,14 +27,18 @@ Most of the times when working with a Linux distribution we will create, remove,
 
 On Debian/Ubuntu the package manager is `apt`. The `package manager` is the tool which helps us install, uninstall, update and upgrade programs/packages and the overall things which we have on our system.
 
-Most common commands when working with `apt` are:
+**Most common commands when working with `apt` are:**
 
   - `sudo apt update`{{execute}} used to fetch latest packages, it does **NOT** actually update any packages
   - `sudo apt upgrade`{{execute}} used to upgrade the version of packages, based on the latest packages fetched by **apt update**
   - `sudo apt list --installed`{{execute}} to list all of the installed packages/programs on the system. We can combine it with `grep` to search for certain packages like so: `apt list --installed | grep nginx`{{execute}}
   - `sudo apt install package-name` used to install packages/programs. In order to install a certain version of a package we can just add the equals sign at the end and specify the version, like so: ` sudo apt install tree=1.7.0-5`{{execute}}
   - `sudo apt remove package-name` used to remove a program, it will *NOT* delete configuration files
-  - `sudo apt purge package-name` used to remove a program *and* the configuration files
+  - `sudo apt purge package-name` used to remove a program *AND* the configuration files
   - `sudo apt autoremove`{{execute}} used to delete packages which are not being used anymore/garbage
 
+
+## Conclusion
+
+We now know how to manage files and packages on the system, most of the **lifetime** in a Linux system is mainly spent on working with files and modifying them, so many of these commands will be used daily.
 
