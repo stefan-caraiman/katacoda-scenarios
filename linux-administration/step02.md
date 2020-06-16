@@ -61,6 +61,7 @@ If we want to check the status of the `ssh` service for example, we can run: `sy
 
 This will tell us whether or not the program is currently running, when it started and how it started, and in case it failed it will give us some output logs.
 
+
 Some other common commands when working with a service are:
 
   - `systemctl stop ssh`{{execute}} to stop a service
