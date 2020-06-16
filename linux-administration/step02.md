@@ -6,7 +6,7 @@ In this second chapter, we will be looking into how we can find out details abou
 
 A process refers to a program which is currently running or just ran.
 
-Any command or long running program we have in Linux is a **process**. The **process** is the actual piece of code which is getting execute by our proccessor/CPU.
+Any command or long running program we have in Linux is a **process**. The **process** is the actual piece of code which is getting executed by our processor/CPU.
 
 Processes are usually either long running/background proccesses or short. Some examples of programs which can be long running are:
 

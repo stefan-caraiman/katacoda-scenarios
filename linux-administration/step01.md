@@ -28,6 +28,7 @@ Most common commands for checking DNS information are: `dig`, `nslookup`, `whois
 
 `whois google.com`{{execute}} will give us details about who owns the domain, when it was bought etc.
 
+It will also give us details about the authorative **NS servers** registered to it. That means the list of servers which are responsibile for finding/resolving the DNS record.
 
 **Using `host`**
 
