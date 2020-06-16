@@ -88,7 +88,7 @@ You can use `nc` like so: `nc -v -w1 netflix.com 443`{{execute}}
 
 We can replace the `netflix.com` address with our localhost IP as well: `nc -v -w1 127.0.0.1 80`{{execute}}
 
-If we ever get a `connection refused` it means that the Port is not opened.
+If we ever get a `connection refused` it means that the **Port** is not opened or that we have **firewall rules** setup that will block that kind of traffic.
 
 If we get a `timeout` it means that the port might be opened, but the application didn't manage to respond to us in a timely manner.
 
