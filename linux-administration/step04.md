@@ -31,7 +31,7 @@ Most common commands when working with `apt` are:
   - `sudo apt update`{{execute}} used to update packages
   - `sudo apt upgrade`{{execute}} used to upgrade the version of packages
   - `sudo apt list --installed`{{execute}} to list all of the installed packages/programs on the system. We can combine it with `grep` to search for certain packages like so: `apt list --installed | grep nginx`{{execute}}
-  - `sudo apt install package-name` used to install packages/programs
+  - `sudo apt install package-name` used to install packages/programs. In order to install a certain version of a package we can just add the equals sign at the end and specify the version, like so: ` sudo apt install tree=1.7.0-5`{{execute}}
   - `sudo apt remove package-name` used to remove a program, it will *NOT* delete configuration files
   - `sudo apt purge package-name` used to remove a program *and* the configuration files
   - `sudo apt autoremove`{{execute}} used to delete packages which are not being used anymore/garbage
