@@ -57,7 +57,9 @@ Most common commands when working with finding/searching for text in files are:
   - `sort` used to sort lines in a file by alphabetical order
   - `wc` used to count lines/words in a file
 
-Some common(more advanced examples):
+We have an `example.txt` log file which is similar to information we find in logs, `cat example.txt`{{execute}}
+
+Some common(more advanced examples) on how to find information inside files:
 
 **How to find how many times the word "BLOCKED" appears in a file:**
 
@@ -65,7 +67,9 @@ Some common(more advanced examples):
 
 The **|** is called a **pipe** in Linux scripting. It is used to **chain**/run commands one after another so that we can process data inside.
 
-This command will output the text inside `example.txt` with `cat`. Then we use **|** to tell it to `grep BLOCKED` so that we can find only the lines in the file which contain the word **BLOCKED** and then we **pipe** again to count how many times the word appears by using the command `wc -l`.
+1. First, we output the text inside `example.txt` with `cat example.txt`.
+2. Then we use **|**(**pipe**) to tell it to `grep BLOCKED` so that we can find only the lines in the file which contain the word **BLOCKED**
+3. Then we **pipe** again to count how many times the word appears by using the command `wc -l`.
 
 **How to find all the unique lines of text in a file and sort them:**
 
