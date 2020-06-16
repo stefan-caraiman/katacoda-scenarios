@@ -30,11 +30,13 @@ The `echo` command is used to output a message to the terminal like so: `echo "H
 
 We can use `echo` with the `>` and `>>` special signs.
 
-`>` is a redirect of output to a file. For example we can tell echo to put some text in a file like so: `echo "Some text" > file.txt`{{execute}} and if we check the file we can see it has the message "Some text", `cat file.text`{{execute}}
+`>` is a redirect of output/text to a file.
+
+For example we can tell echo to put some text in a file like so: `echo "Some text" > file.txt`{{execute}} and if we check the file we can see it has the message "Some text", `cat file.txt`{{execute}}
 
 `>` is used as a easy way to write text into a file, without opening and editing the file by hand.
 
-**Beware** If you use `>` on an existing file, it will delete all the text inside, and only put your message in it. It overwrites everything inside.
+**Beware** If you use `>` on an existing file, it will delete all the text inside, and only put your message in it. It overwrites everything inside the file.
 
 So if we do `echo "Some other text" > file.txt`{{execute}} and then `cat` `cat file.txt`{{execute}} we notice that the file only contains `Some other text`.
 
