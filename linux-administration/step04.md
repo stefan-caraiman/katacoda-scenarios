@@ -34,7 +34,7 @@ We can use `echo` with the `>` and `>>` special signs.
 
 For example we can tell echo to put some text in a file like so: `echo "Some text" > file.txt`{{execute}} and if we check the file we can see it has the message "Some text", `cat file.txt`{{execute}}
 
-`>` is used as a easy way to write text into a file, without opening and editing the file by hand.
+`>` is used as an easy way to write text into a file, without opening and editing the file by hand. It is usually used in scripts.
 
 **Beware** If you use `>` on an existing file, it will delete all the text inside, and only put your message in it. It overwrites everything inside the file.
 
