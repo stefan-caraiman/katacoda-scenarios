@@ -73,7 +73,7 @@ The **|** is called a **pipe** in Linux scripting. It is used to **chain**/run c
 
 **How to find all the unique lines of text in a file and sort them:**
 
-`cat example.txt | uniq | sort`
+`cat example.txt | uniq | sort`{{execute}}
 
 We `cat` to get the text inside the file and the use **pipe** twice to first get all the unique lines of text with the **uniq** command and then we run **sort** to get the lines in the alphabetical order.
 
