@@ -1,5 +1,3 @@
-# Files and packages
-
 ## Working with files
 
 From a files perspective we will most of the times open and modify files on the system.
