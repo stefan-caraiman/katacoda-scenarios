@@ -19,6 +19,7 @@ On the other hand a "short running" process could be:
   - a bash script which does some simple tasks
   - a command we just ran, such as `ls -la` will be executed as a process and then stop after it managed to show us all the files
 
+
 ## What is a service?
 
 A service is just a program which makes sure that an application is running and stays running.
@@ -74,4 +75,4 @@ Some other common commands when working with a service are:
 
 We now know how to check if a process is running, and also manage it using `systemctl` if the process is registered as a **service**.
 
-Feel free to play around with other services, check their output, restart them and so on!
+Feel free to play around with other services, check their output restart them and so on!

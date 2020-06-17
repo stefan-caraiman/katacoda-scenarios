@@ -131,7 +131,7 @@ If the expected port is not running, you can start from there to investigate fur
 
 Checking if the process is running, checking the logs of the application etc.
 
-`netstat` is sometimes prefered in the favour of `netcat` because it can display more detailed local information about a port. Who owns it, when it started etc.
+`netstat` is sometimes prefered in the favour of `netcat` because it can display more detailed local information about ports. Who owns it, when it started etc.
 
 ## Checking the response from a web application
 
@@ -148,7 +148,7 @@ Will give us the `index.html` from the `example.com` webpage and additional head
 
 1. Checking our system public IP: `curl ifconfig.me`{{execute}} or `curl icanhazip.com`{{execute}} or `dig +short myip.opendns.com @resolver1.opendns.com`{{execute}}
 2. Checking local private network information: `ifconfig`{{execute}} or on newer systems: `ip a s`{{execute}}
-3. Enable/disable a private network: `ifdown lo`{{execute}} to disable and `ifup lo`{{execute}} to enable the **lo**(localhost) network.
+3. Enable/disable a private network/interface: `ifdown lo`{{execute}} to disable and `ifup lo`{{execute}} to enable the **lo**(localhost) network.
 
 ## Conclusion
 

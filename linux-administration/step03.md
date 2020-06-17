@@ -78,7 +78,9 @@ For example if we want to check what are the biggest 5 folders in the `/var` fol
 
 And to check the 5 biggest files in the `/var` folders, we can run the `find` command like so: `find /var -type f -exec du -Sh {} + | sort -rh | head -n 5`{{execute}}
 
-Usually after checking that the disk usage is full, we would start checking folders and files which take up space and identify the issue. Most of the times it can be a big file, like a log file growing big because there are many requests, or some backup files not being deleted properly.
+Usually after checking that the disk usage is full, we would start checking folders and files which take up space and identify the issue.
+
+Most of the times it can be a big file, like a log file growing big because there are many requests, or some backup files not being deleted properly.
 
 
 ## Conclusion
@@ -87,5 +89,5 @@ We now have the tools necessary to identify issues related to the usage of resou
 
 Most of the times we will simply start checking all the resources one by one when we encounter issues with our applications.
 
-From there on out, you can present the findings on to the development teams and decide on next steps.
+From there on out, you can present the findings on to the development teams/rest of the team and decide on next steps.
 
