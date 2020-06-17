@@ -1,8 +1,8 @@
 {
-  "title": "Linux Administration",
+  "title": "Basic Linux Administration",
   "description": "How to debug and manage a Linux distribution",
   "difficulty": "beginner",
-  "time": "50 minutes",
+  "time": "60 minutes",
   "details": {
     "steps": [{
       "title": "Chapter 1 - Networking",
