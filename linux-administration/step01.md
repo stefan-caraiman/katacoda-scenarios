@@ -18,6 +18,11 @@ Most common commands for checking DNS information are: `dig`, `nslookup`, `whois
 
 `dig google.com`{{execute}} will give us the DNS information about the `google.com` domain.
 
+Couple other common usages:
+
+  - `dig +short google.com`{{execute}} the **+short** argument will get us only the IP address of a domain
+  - `dig google.com NS`{{execute}} the **NS** argument will give us the NameServers responsibile for this DNS record
+
 
 **Using `nslookup`**
 
