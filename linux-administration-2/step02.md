@@ -1,0 +1,37 @@
+# Scripting
+
+On most days when working with a Linux system we will simply run commands and look or edit files.
+
+But there will be times when we need to write scripts to automate our workflow.
+
+
+## Bash scripts
+
+The most common kind of scripts in Linux are **bash scripts**.
+
+**Bash** is both a scripting language and a shell(also called **interpretor** or **terminal**).
+
+In a **shell** we can run commands and see their result/output.
+
+Things to remember when working with any kind of scripting language:
+
+  - each line in a script is executed one by one, sequentially
+  - a script starts executing each line from the top/beggining of the file to the end/bottom and then stops
+  - the first line in a bash script will be a **shebang**, it looks like this: **#!/bin/bash**
+  - Because of the **shebang**, the **shell** knows that it needs to use **bash** to execute/run the script
+  - A **bash script** filename ends with **.sh**
+
+
+## Common actions in bash scripts
+
+1. Write a **for** loop to go through 
+
+## Common bash scripts in interviews
+
+In most interviews we will have to implement scripts that do:
+
+1.
+
+## Exercises:
+
+1. 
