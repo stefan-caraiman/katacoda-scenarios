@@ -24,7 +24,13 @@ Things to remember when working with any kind of scripting language:
 
 ## Common actions in bash scripts
 
-1. Write a **for** loop to go through 
+1. Write a **for** loop and `echo` each file that ends with `.sh`:
+
+```
+for file in $(ls *.sh); do
+  echo $file
+done
+```
 
 ## Common bash scripts in interviews
 
