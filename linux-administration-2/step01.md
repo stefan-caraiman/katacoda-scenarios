@@ -36,7 +36,7 @@ A **log file** contains information about all the events/actions that happened o
 
 2. Finding all the **.log** files inside `/var/log` using the `find` command: `find /var/log/ -iname "*.log"`{{execute}}
 
-3. Search for what things the system downloaded: `cat /var/log/syslog | grep "Download`{{execute}}
+3. Search for what things the system downloaded: `cat /var/log/syslog | grep "Download"`{{execute}}
 
 4. Seeing logs about who and what accessed on the Nginx: `cat /var/log/nginx/access.log`{{execute}} 
 
