@@ -12,8 +12,8 @@ A **log file** contains information about all the events/actions that happened o
   - Who SSH-ed or accessed our website/Nginx web server
   - Logs about the application, if something failed inside the application
   - What the users on the system are doing, who used **sudo**:
-    - On Ubuntu/Debian this file is `cat /var/log/secure`{{execute}}
-    - On CentOS/Redhat this file is `cat /var/log/auth.log`{{execute}}
+    - On Ubuntu/Debian this file is `cat /var/log/auth.log`{{execute}}
+    - On CentOS/Redhat this file is `cat /var/log/secure`{{execute}}
 
 ## Most common commands when working with a **log file** are:
 
