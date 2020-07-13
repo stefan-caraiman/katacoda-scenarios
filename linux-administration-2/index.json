@@ -12,7 +12,7 @@
     {
       "title": "Chapter 2 - Scripting",
       "text": "step02.md",
-      "courseData": "setup.sh"
+      "courseData": "setup-file.sh"
     }
   ],
     "intro": {
