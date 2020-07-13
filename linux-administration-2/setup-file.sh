@@ -2,9 +2,9 @@ echo "#!/bin/bash
 
 URL="google.com"
 
-echo "Checking $URL"
+echo "Checking $$URL"
 
-ping -c2 $URL
+ping -c2 $$URL
 " >> check_url.sh
 
 
