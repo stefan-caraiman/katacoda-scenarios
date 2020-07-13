@@ -1,0 +1,33 @@
+{
+  "title": "Linux Administration Chapter 2",
+  "description": "How to debug and manage a Linux distribution - Chapter 2",
+  "difficulty": "beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [{
+      "title": "Chapter 1 - Log files",
+      "text": "step01.md",
+      "courseData": "setup.sh"
+    },
+    {
+      "title": "Chapter 2 - Scripting",
+      "text": "step02.md",
+      "courseData": "setup.sh"
+    }
+  ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [],
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mThis is an interactive Bash Terminal in Ubuntu.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
