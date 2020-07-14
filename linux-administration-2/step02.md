@@ -32,11 +32,26 @@ for file in $(ls *.sh); do
 done
 ```
 
+2. 
+
 ## Common bash scripts in interviews
 
 In most interviews we will have to implement scripts that do:
 
-1.
+1. Loop through numbers from 1 to 10 and echo if a number is even or odd(**un for loop care ne zice daca un numar este par sau impar, un numar este par daca se imparte la 2, altfel este impar**)
+
+```
+for number in $(seq 1 10); do
+    # Verificam daca numarul se imparte la 2
+    if (( $number % 2 )); then
+      echo "$number este par";
+    # Daca nu se imparte la 2 inseamna ca este impar
+    else
+      echo "$number este impar";
+    fi
+done
+```
+
 
 ## Exercises:
 
