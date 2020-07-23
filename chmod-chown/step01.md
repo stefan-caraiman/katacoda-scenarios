@@ -147,3 +147,9 @@ Am invatat cum sa cream users, groups, sa schimbam parole, sa adaugam users in g
   - `groupadd` ca sa adaugam groups
   - `useradd` ca sa adaugam users
   - `usermod` ca sa adaugam un user la un group
+
+De asemenea stim despre fisirele:
+
+  - `cat /etc/passwd`{{execute}} -> contine informatii despre users
+  - `cat /etc/group`{{execute}} -> contine informatii despre groups
+  - `cat /etc/shadow`{{execute}} -> contine informatii despre parole
