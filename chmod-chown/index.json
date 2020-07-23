@@ -1,0 +1,28 @@
+{
+  "title": "Permisii in Linux",
+  "description": "Cum sa setam permisii in Linux cu chmod si chown",
+  "difficulty": "beginner",
+  "time": "30 minutes",
+  "details": {
+    "steps": [{
+      "title": "chmod and chown",
+      "text": "step01.md",
+      "courseData": "setup.sh"
+    }
+  ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [],
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mThis is an interactive Bash Terminal in Ubuntu.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
