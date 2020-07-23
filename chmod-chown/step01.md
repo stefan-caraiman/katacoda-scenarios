@@ -71,6 +71,7 @@ Astfel, un fisier va avea mereu asociat un `user` si `group` de users.
 
 Ca sa schimbam `owners` de `user` si `group` catre `stefan` si groupul de `devops` vom rula comanda `chown` astfel: `chown stefan:devops /home/stefan/fisier.sh`{{execute}}
 
+
 Daca rulam comanda `ls -l /home/stefan/`{{execute}} observam ca fisierul `fisier.sh` are owner-ul setat ca si `stefan` si `devops`.
 
 Asta inseamna ca user-ul `stefan` si oricine este in groupul `devops` poate modifica permisiile fisierului.
@@ -81,11 +82,13 @@ Permisiile in Linux dicteaza cine si cum poate citi, scrie sau execute un fisier
 
 Ca sa putem seta permisii, trebuie ori sa fim `root` ori `user` care sa fie `owner`, ori parte din `group` de owners.
 
+
 Vom incerca sa schimbam permisiile ca si user-ul `stefan`.
 
 1. Facem switch catre user-ul `stefan`: `su stefan`{{execute}}
 2. Facem `cd` in folder-ul lui: `cd /home/stefan/`{{execute}}
 3. Validam ca avem fiser-ul: `ls -l`{{execute}} si ca suntem user-ul `stefan` cu comanda `whoami`{{execute}}
+
 
 In prima parte la output-ul comenzii `ls -l`, observam ca fisierul `fisier.sh` are setate permisiile: `-rw-r--r--`
 
@@ -99,11 +102,13 @@ Permisiile sunt setate astfel:
 
 De exemplu daca vrem sa setam drept de citire, scriere si execute doar pentru user-ul nostru vom rula: `chmod u+rwx fisier.sh`{{execute}}
 
+
 Daca rulam din nou `ls -l`{{execute}} observam ca avem acum setate permisiile `-rwxr--r--`, primele 4 litere reprezinta drepturile setate la nivel de `user`, de asta am scris comanda `chmod` incepand cu `u+`
 
 ### Cum setam permisii la nivel de `group`
 
 Daca vrem sa setam drept de citire, scriere si execute la nivel de `group` vom scrie: `chmod g+rwx fisier.sh`{{execute}}
+
 
 Daca rulam din nou `ls -l`{{execute}} observam ca avem acum setate permisiile `-rwxrwxr--`, urmatoarele 3 litere reprezentand drepturile setata la nivel de `group`
 
@@ -113,7 +118,9 @@ Daca vrem sa permitem sau nu oricarui alt user drepturi asupra unui fisier, rula
 
 Daca vrem sa scoatem orice fel de drepturi pentru alti users de pe sistem rulam comanda: `chmod o-rwx fisier.sh`{{execute}}.
 
+
 **Important:** litera minus va scoate drepturi, litera plus adauga drepturi in `chmod`.
+
 
 Daca rulam din nou `ls -l`{{execute}} observam ca avem acum setate permisiile `-rwxrwx---`, ultimele 3 litere/liniute reprezentand drepturile setata la nivel de `other users`, iar alti users nu vor avea nici un fel de acces la acest fisier, decat daca sunt userul `stefan` sau parte din groupul `devops`.
 
