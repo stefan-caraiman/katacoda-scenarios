@@ -38,7 +38,7 @@ In caz ca uitam parola unui user, folosim comanda `passwd`.
 `passwd stefan`{{execute}} ne va da un prompt sa setam o noua parola.
 
 
-## Cum putea un group in Linux?
+## Cum putea crea un group in Linux?
 
 Un group in Linux reprezinta o multime de users pusi sub aceleasi reguli dictate de group.
 
@@ -47,6 +47,8 @@ De exemplu putem crea un group pentru `devops` cu comanda: `groupadd devops`{{ex
 Si alt group cu numele `testers` cu comanda: `groupadd testers`{{execute}}.
 
 Ca sa vedem ce `groups` exista, putem rula comanda: `cat /etc/group`{{execute}}
+
+## Cum putem adauga un user intr-un group?
 
 Ca sa adaugam un user `stefan` intr-un group `devops`, rulam comanda `usermod` astfel: `usermod -aG devops stefan`{{execute}}
 

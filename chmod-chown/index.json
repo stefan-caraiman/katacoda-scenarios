@@ -1,11 +1,11 @@
 {
   "title": "Permisii in Linux",
-  "description": "Cum sa setam permisii in Linux cu chmod si chown",
+  "description": "Cum sa setam permisii in Linux cu chmod si chown si sa cream users/groups",
   "difficulty": "beginner",
   "time": "30 minutes",
   "details": {
     "steps": [{
-      "title": "chmod and chown",
+      "title": "chmod and chown users and groups",
       "text": "step01.md",
       "courseData": "setup.sh"
     }
